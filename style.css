@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Super-Smash-Bros-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 55%;
+    margin: 20px auto;
+    background-color: #2e9ebd;
+}
+
+th, td {
+    border: 1px solid rgb(6, 6, 6);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #41c863;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-color: rgb(255, 106, 0);
+    margin: 20px auto;
+    width: 55%;
+}
+h3{
+    text-align: center;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    background-color: rgb(255, 106, 0);
+    margin: 20px auto;
+    width: 55%;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="submit"], input[type="button"], button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: black;
+    background-color: #6acbf8;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    h2, h3 {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 150px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100px;
+    }
+
+    form input[type="submit"], form input[type="button"], form button {
+        width: 100%;
+        margin: 5px 0; /* Add space between buttons and inputs */
+    }
+}

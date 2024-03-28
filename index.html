@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <h2>Torneo Super Smash Bros Tec-Zum - Round Robin</h2>
+    <form id="addPlayerForm">
+        <input type="text" id="playerName" placeholder="Nombre del jugador">
+        <input type="number" id="roundNumber" placeholder="Número de Ronda" min="1">
+        <input type="button" value="Agregar Jugador" onclick="addPlayer()">
+    </form>
+    <table id="tournamentTable">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th>Ronda</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PP</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los jugadores se insertarán aquí -->
+        </tbody>
+    </table>
+    <button onclick="updatePoints()">Actualizar Puntos</button>
+</div>
+<div class="container">
+    <h3>Totales por Jugador</h3>
+    <table id="totalPointsTable">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th>Total Puntos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los totales se insertarán aquí -->
+        </tbody>
+    </table>
+    <button onclick="calculateTotals()">Puntuación Total</button>
+</div>
+<script src="funcion.js"></script>
+</body>
+
+</html>
